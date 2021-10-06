@@ -6,3 +6,9 @@ export function updateName(params){
         payload : params,
     }
 }
+
+export fcuntion queryAsyncName(params){
+    return (dispatch,getState) => {
+        
+    }
+}
