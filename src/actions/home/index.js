@@ -7,7 +7,7 @@ export function updateName(params){
     }
 }
 
-export fcuntion queryAsyncName(params){
+export function queryAsyncName(params){
     return (dispatch,getState) => {
         
     }

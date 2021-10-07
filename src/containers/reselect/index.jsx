@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import propTypes from 'prop-types'
 import {connect} from 'react-redux'
@@ -22,7 +21,7 @@ import {
      (list ,filter) => filterData(list,filter)
  )
 
-@connnect(
+@connect(
     (state) => ({
         filterList:filterReselectData(state),
     }),
@@ -50,15 +49,20 @@ export default class ReselectDemo  extends Component {
                 ))}
             </>
             <button type="button" onClick={() => this.handleUpdate(1)}></button>
+            <button type="button" onClick={() => this.handleUpdate(2)}></button>
+            <button type="button" onClick={() => this.handleUpdate(3)}></button>
         </div>
         );
     }
 }
  
-export default ReselectDemo;
-=======
-import React,{Component} from 'react';
-import propTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {createSelector} from 'reselect'
->>>>>>> fd54adf34a0dba846e3a84c67863167f829ddec7
+
+ReselectDemo.propTypes = {
+    filterList : propTypes.arrayOf(propTypes.object),
+    updateFilterStatus: propTypes.func
+}
+
+ReselectDemo.defaultProps = {
+    filterList: [],
+    updateFilterStatus: () => null
+}

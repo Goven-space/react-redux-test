@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import {
     updateName,
 } from '@/actions/home'
-<<<<<<< HEAD
-=======
 import PropTypes from 'prop-types'
 
 @connect((state) => {
@@ -13,7 +11,6 @@ import PropTypes from 'prop-types'
 } ,(dispatch) => ({
     updateName:(params) => dispatch(updateName(params)),
 }))
->>>>>>> fd54adf34a0dba846e3a84c67863167f829ddec7
 
 @connect((state) => state.homeReducer)
 export default class Home extends Component{
