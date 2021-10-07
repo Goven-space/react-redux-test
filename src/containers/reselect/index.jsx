@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import propTypes from 'prop-types'
 import {connect} from 'react-redux'
@@ -55,3 +56,9 @@ export default class ReselectDemo  extends Component {
 }
  
 export default ReselectDemo;
+=======
+import React,{Component} from 'react';
+import propTypes from 'prop-types';
+import {connect} from 'react-redux';
+import {createSelector} from 'reselect'
+>>>>>>> fd54adf34a0dba846e3a84c67863167f829ddec7
